@@ -1,0 +1,181 @@
+[gd_scene load_steps=19 format=3 uid="uid://cl1tbbdhpwwux"]
+
+[ext_resource type="Script" path="res://scipts/pers.gd" id="1_0cci8"]
+[ext_resource type="Texture2D" uid="uid://cvkprcrvgld0e" path="res://sprites/pers.png" id="1_4a3f5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyca8"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6j4h"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fm5f"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awxso"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_np401"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(16, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50tr5"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(32, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yj2q"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(0, 96, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lh826"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(16, 96, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kj8u2"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(32, 96, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6s5a"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(0, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w08nf"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(16, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6k6f"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(32, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbi2p"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1477"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(0, 96, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4k06"]
+atlas = ExtResource("1_4a3f5")
+region = Rect2(0, 64, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pwf3r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyca8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6j4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyca8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fm5f")
+}],
+"loop": true,
+"name": &"a_b",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_awxso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_np401")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_awxso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50tr5")
+}],
+"loop": true,
+"name": &"a_c",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yj2q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lh826")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yj2q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kj8u2")
+}],
+"loop": true,
+"name": &"a_d",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6s5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w08nf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6s5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6k6f")
+}],
+"loop": true,
+"name": &"a_e",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyca8")
+}],
+"loop": true,
+"name": &"p_b",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbi2p")
+}],
+"loop": true,
+"name": &"p_c",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1477")
+}],
+"loop": true,
+"name": &"p_d",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4k06")
+}],
+"loop": true,
+"name": &"p_e",
+"speed": 0.0
+}]
+
+[node name="pers" type="Node2D"]
+script = ExtResource("1_0cci8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_pwf3r")
+animation = &"p_b"
+autoplay = "p_b"
+
+[node name="timer_andar" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="timer_andar" to="." method="_on_timer_andar_timeout"]
