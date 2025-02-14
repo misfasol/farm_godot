@@ -58,7 +58,7 @@ func _process(_delta: float) -> void:
 		position = somar_vec2i(somar_vec2i(Globais.posi * 16, Vector2i(8, 8)), 16 * interp * ultima_dir)
 
 func consegue_andar_dir(dir: Vector2i) -> bool:
-	var cel = principal.get_node("solo").get_cell_tile_data(somar_vec2i(Globais.posi, dir))
+	var cel = principal.get_node("plantacao/solo").get_cell_tile_data(somar_vec2i(Globais.posi, dir))
 	if not cel:
 		return true
 	return not cel.get_custom_data("nao_andavel")
